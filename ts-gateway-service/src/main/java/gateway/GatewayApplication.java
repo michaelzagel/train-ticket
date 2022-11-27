@@ -15,6 +15,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 public class GatewayApplication {
     public static void main(String[] args) {
         SpringApplication.run(GatewayApplication.class, args);
+        httpPost("/MovieService/findMovie");
     }
 
 }
